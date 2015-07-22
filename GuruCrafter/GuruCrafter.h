@@ -12,7 +12,7 @@
 
 @class User;
 
-@interface GuruCrafter : Object
+@interface GuruCrafter : NSManagedObject
 
 @property (nonatomic, retain) NSSet *users;
 @end

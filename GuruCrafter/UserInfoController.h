@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "User.h"
 
 @interface UserInfoController : UITableViewController
+
+-(IBAction)touchUpButton:(UIButton*)sender;
+
+@property (weak, nonatomic) IBOutlet UITextField *email, *firstName, *lastName;
+@property (strong, nonatomic) User *user;
 
 @end

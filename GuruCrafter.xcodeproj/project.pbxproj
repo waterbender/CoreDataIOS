@@ -7,14 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC3106191B5C5AF000D42FDB /* GroupInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3106181B5C5AF000D42FDB /* GroupInfoController.m */; };
+		EC31061C1B5C6B8C00D42FDB /* CheckedUsers.m in Sources */ = {isa = PBXBuildFile; fileRef = EC31061B1B5C6B8C00D42FDB /* CheckedUsers.m */; };
 		EC7FD3771B57F73900911A95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7FD3761B57F73900911A95 /* main.m */; };
 		EC7FD37A1B57F73900911A95 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7FD3791B57F73900911A95 /* AppDelegate.m */; };
 		EC7FD37D1B57F73900911A95 /* GuruCrafter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EC7FD37B1B57F73900911A95 /* GuruCrafter.xcdatamodeld */; };
-		EC7FD3801B57F73900911A95 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7FD37F1B57F73900911A95 /* ViewController.m */; };
 		EC7FD3831B57F73900911A95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC7FD3811B57F73900911A95 /* Main.storyboard */; };
 		EC7FD3851B57F73900911A95 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC7FD3841B57F73900911A95 /* Images.xcassets */; };
 		EC7FD3881B57F73900911A95 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC7FD3861B57F73900911A95 /* LaunchScreen.xib */; };
 		EC7FD3941B57F73900911A95 /* GuruCrafterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7FD3931B57F73900911A95 /* GuruCrafterTests.m */; };
+		EC922FF81B580EB8009E0BB0 /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = EC922FF71B580EB8009E0BB0 /* DataSource.m */; };
+		EC9230491B582289009E0BB0 /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9230481B582289009E0BB0 /* DataViewController.m */; };
+		EC92304C1B582DDF009E0BB0 /* UsersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC92304B1B582DDF009E0BB0 /* UsersTableViewController.m */; };
+		ECBE3E5B1B58826E00AE8172 /* UserInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECBE3E5A1B58826E00AE8172 /* UserInfoController.m */; };
+		ECBE3E5E1B5884C600AE8172 /* InfoViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ECBE3E5D1B5884C600AE8172 /* InfoViewCell.m */; };
+		ECDFD5D51B594415007F263F /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDFD5D41B594415007F263F /* User.m */; };
+		ECDFD5E11B594E5F007F263F /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDFD5E01B594E5F007F263F /* Teacher.m */; };
+		ECDFD5E51B5953D5007F263F /* CoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDFD5E41B5953D5007F263F /* CoursesViewController.m */; };
+		ECDFD5E81B5991AC007F263F /* StudentsFromCourseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDFD5E71B5991AC007F263F /* StudentsFromCourseTableViewController.m */; };
+		ECDFD5EB1B59E9FD007F263F /* UsersCourseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDFD5EA1B59E9FD007F263F /* UsersCourseTableViewController.m */; };
+		ECDFD5ED1B59EBC6007F263F /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = ECDFD5EC1B59EBC6007F263F /* 1.png */; };
+		ECDFD5F01B59EC89007F263F /* UserEnabledDissableCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDFD5EF1B59EC89007F263F /* UserEnabledDissableCellTableViewCell.m */; };
+		ECDFD5F31B5AAAF9007F263F /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDFD5F21B5AAAF9007F263F /* Course.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,20 +42,47 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC3106171B5C5AF000D42FDB /* GroupInfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupInfoController.h; sourceTree = "<group>"; };
+		EC3106181B5C5AF000D42FDB /* GroupInfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupInfoController.m; sourceTree = "<group>"; };
+		EC31061A1B5C6B8C00D42FDB /* CheckedUsers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckedUsers.h; sourceTree = "<group>"; };
+		EC31061B1B5C6B8C00D42FDB /* CheckedUsers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckedUsers.m; sourceTree = "<group>"; };
 		EC7FD3711B57F73900911A95 /* GuruCrafter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuruCrafter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC7FD3751B57F73900911A95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC7FD3761B57F73900911A95 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EC7FD3781B57F73900911A95 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EC7FD3791B57F73900911A95 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		EC7FD37C1B57F73900911A95 /* GuruCrafter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GuruCrafter.xcdatamodel; sourceTree = "<group>"; };
-		EC7FD37E1B57F73900911A95 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EC7FD37F1B57F73900911A95 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EC7FD3821B57F73900911A95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC7FD3841B57F73900911A95 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EC7FD3871B57F73900911A95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		EC7FD38D1B57F73900911A95 /* GuruCrafterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuruCrafterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC7FD3921B57F73900911A95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC7FD3931B57F73900911A95 /* GuruCrafterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GuruCrafterTests.m; sourceTree = "<group>"; };
+		EC922FF61B580EB8009E0BB0 /* DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource.h; sourceTree = "<group>"; };
+		EC922FF71B580EB8009E0BB0 /* DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource.m; sourceTree = "<group>"; };
+		EC9230471B582289009E0BB0 /* DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
+		EC9230481B582289009E0BB0 /* DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
+		EC92304A1B582DDF009E0BB0 /* UsersTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsersTableViewController.h; sourceTree = "<group>"; };
+		EC92304B1B582DDF009E0BB0 /* UsersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsersTableViewController.m; sourceTree = "<group>"; };
+		ECBE3E591B58826E00AE8172 /* UserInfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoController.h; sourceTree = "<group>"; };
+		ECBE3E5A1B58826E00AE8172 /* UserInfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoController.m; sourceTree = "<group>"; };
+		ECBE3E5C1B5884C600AE8172 /* InfoViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewCell.h; sourceTree = "<group>"; };
+		ECBE3E5D1B5884C600AE8172 /* InfoViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewCell.m; sourceTree = "<group>"; };
+		ECDFD5D31B594415007F263F /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		ECDFD5D41B594415007F263F /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		ECDFD5DF1B594E5F007F263F /* Teacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
+		ECDFD5E01B594E5F007F263F /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
+		ECDFD5E31B5953D5007F263F /* CoursesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoursesViewController.h; sourceTree = "<group>"; };
+		ECDFD5E41B5953D5007F263F /* CoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoursesViewController.m; sourceTree = "<group>"; };
+		ECDFD5E61B5991AC007F263F /* StudentsFromCourseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentsFromCourseTableViewController.h; sourceTree = "<group>"; };
+		ECDFD5E71B5991AC007F263F /* StudentsFromCourseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentsFromCourseTableViewController.m; sourceTree = "<group>"; };
+		ECDFD5E91B59E9FD007F263F /* UsersCourseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsersCourseTableViewController.h; sourceTree = "<group>"; };
+		ECDFD5EA1B59E9FD007F263F /* UsersCourseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsersCourseTableViewController.m; sourceTree = "<group>"; };
+		ECDFD5EC1B59EBC6007F263F /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		ECDFD5EE1B59EC89007F263F /* UserEnabledDissableCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserEnabledDissableCellTableViewCell.h; sourceTree = "<group>"; };
+		ECDFD5EF1B59EC89007F263F /* UserEnabledDissableCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserEnabledDissableCellTableViewCell.m; sourceTree = "<group>"; };
+		ECDFD5F11B5AAAF9007F263F /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
+		ECDFD5F21B5AAAF9007F263F /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +103,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC3106161B5C58CA00D42FDB /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				ECDFD5E61B5991AC007F263F /* StudentsFromCourseTableViewController.h */,
+				ECDFD5E71B5991AC007F263F /* StudentsFromCourseTableViewController.m */,
+				ECDFD5E91B59E9FD007F263F /* UsersCourseTableViewController.h */,
+				ECDFD5EA1B59E9FD007F263F /* UsersCourseTableViewController.m */,
+			);
+			name = Error;
+			sourceTree = "<group>";
+		};
 		EC7FD3681B57F73900911A95 = {
 			isa = PBXGroup;
 			children = (
@@ -83,15 +135,18 @@
 		EC7FD3731B57F73900911A95 /* GuruCrafter */ = {
 			isa = PBXGroup;
 			children = (
+				EC922FF91B581352009E0BB0 /* Models */,
+				ECDFD5E21B59535C007F263F /* DataControllers */,
 				EC7FD3781B57F73900911A95 /* AppDelegate.h */,
 				EC7FD3791B57F73900911A95 /* AppDelegate.m */,
-				EC7FD37E1B57F73900911A95 /* ViewController.h */,
-				EC7FD37F1B57F73900911A95 /* ViewController.m */,
 				EC7FD3811B57F73900911A95 /* Main.storyboard */,
 				EC7FD3841B57F73900911A95 /* Images.xcassets */,
 				EC7FD3861B57F73900911A95 /* LaunchScreen.xib */,
 				EC7FD37B1B57F73900911A95 /* GuruCrafter.xcdatamodeld */,
+				ECDFD5EC1B59EBC6007F263F /* 1.png */,
 				EC7FD3741B57F73900911A95 /* Supporting Files */,
+				EC922FF61B580EB8009E0BB0 /* DataSource.h */,
+				EC922FF71B580EB8009E0BB0 /* DataSource.m */,
 			);
 			path = GuruCrafter;
 			sourceTree = "<group>";
@@ -120,6 +175,43 @@
 				EC7FD3921B57F73900911A95 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC922FF91B581352009E0BB0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ECDFD5D31B594415007F263F /* User.h */,
+				ECDFD5D41B594415007F263F /* User.m */,
+				ECDFD5DF1B594E5F007F263F /* Teacher.h */,
+				ECDFD5E01B594E5F007F263F /* Teacher.m */,
+				ECDFD5F11B5AAAF9007F263F /* Course.h */,
+				ECDFD5F21B5AAAF9007F263F /* Course.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		ECDFD5E21B59535C007F263F /* DataControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EC3106161B5C58CA00D42FDB /* Error */,
+				ECBE3E5C1B5884C600AE8172 /* InfoViewCell.h */,
+				ECBE3E5D1B5884C600AE8172 /* InfoViewCell.m */,
+				EC9230471B582289009E0BB0 /* DataViewController.h */,
+				EC9230481B582289009E0BB0 /* DataViewController.m */,
+				EC92304A1B582DDF009E0BB0 /* UsersTableViewController.h */,
+				EC92304B1B582DDF009E0BB0 /* UsersTableViewController.m */,
+				ECBE3E591B58826E00AE8172 /* UserInfoController.h */,
+				ECBE3E5A1B58826E00AE8172 /* UserInfoController.m */,
+				ECDFD5E31B5953D5007F263F /* CoursesViewController.h */,
+				ECDFD5E41B5953D5007F263F /* CoursesViewController.m */,
+				EC3106171B5C5AF000D42FDB /* GroupInfoController.h */,
+				EC3106181B5C5AF000D42FDB /* GroupInfoController.m */,
+				EC31061A1B5C6B8C00D42FDB /* CheckedUsers.h */,
+				EC31061B1B5C6B8C00D42FDB /* CheckedUsers.m */,
+				ECDFD5EE1B59EC89007F263F /* UserEnabledDissableCellTableViewCell.h */,
+				ECDFD5EF1B59EC89007F263F /* UserEnabledDissableCellTableViewCell.m */,
+			);
+			name = DataControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC7FD3831B57F73900911A95 /* Main.storyboard in Resources */,
+				ECDFD5ED1B59EBC6007F263F /* 1.png in Resources */,
 				EC7FD3881B57F73900911A95 /* LaunchScreen.xib in Resources */,
 				EC7FD3851B57F73900911A95 /* Images.xcassets in Resources */,
 			);
@@ -222,10 +315,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECDFD5D51B594415007F263F /* User.m in Sources */,
+				ECDFD5E51B5953D5007F263F /* CoursesViewController.m in Sources */,
 				EC7FD37A1B57F73900911A95 /* AppDelegate.m in Sources */,
+				EC922FF81B580EB8009E0BB0 /* DataSource.m in Sources */,
+				ECDFD5F31B5AAAF9007F263F /* Course.m in Sources */,
+				ECDFD5E11B594E5F007F263F /* Teacher.m in Sources */,
+				EC9230491B582289009E0BB0 /* DataViewController.m in Sources */,
+				ECDFD5E81B5991AC007F263F /* StudentsFromCourseTableViewController.m in Sources */,
 				EC7FD3771B57F73900911A95 /* main.m in Sources */,
-				EC7FD3801B57F73900911A95 /* ViewController.m in Sources */,
+				ECBE3E5B1B58826E00AE8172 /* UserInfoController.m in Sources */,
 				EC7FD37D1B57F73900911A95 /* GuruCrafter.xcdatamodeld in Sources */,
+				ECDFD5F01B59EC89007F263F /* UserEnabledDissableCellTableViewCell.m in Sources */,
+				EC92304C1B582DDF009E0BB0 /* UsersTableViewController.m in Sources */,
+				EC31061C1B5C6B8C00D42FDB /* CheckedUsers.m in Sources */,
+				EC3106191B5C5AF000D42FDB /* GroupInfoController.m in Sources */,
+				ECDFD5EB1B59E9FD007F263F /* UsersCourseTableViewController.m in Sources */,
+				ECBE3E5E1B5884C600AE8172 /* InfoViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +526,7 @@
 				EC7FD3991B57F73900911A95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC7FD39A1B57F73900911A95 /* Build configuration list for PBXNativeTarget "GuruCrafterTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +535,7 @@
 				EC7FD39C1B57F73900911A95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

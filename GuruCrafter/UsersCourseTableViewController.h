@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DataViewController.h"
+#import "StudentsFromCourseTableViewController.h"
 
-@interface UsersCourseTableViewController : UITableViewController
+@interface UsersCourseTableViewController : DataViewController
+
+@property StudentsFromCourseTableViewController *vcStudents;
 
 @end

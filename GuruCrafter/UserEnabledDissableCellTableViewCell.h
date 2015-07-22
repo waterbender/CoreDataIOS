@@ -10,4 +10,7 @@
 
 @interface UserEnabledDissableCellTableViewCell : UITableViewCell
 
+@property (strong, nonatomic) UIImage *picture;
+@property (strong, nonatomic) UIImageView *imView;
+
 @end

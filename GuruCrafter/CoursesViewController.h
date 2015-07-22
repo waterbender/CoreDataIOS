@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DataViewController.h"
 
-@interface CoursesViewController : UITableViewController
+@interface CoursesViewController : DataViewController
 
 @end

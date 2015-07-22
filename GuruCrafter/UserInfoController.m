@@ -7,6 +7,8 @@
 //
 
 #import "UserInfoController.h"
+#import "InfoViewCell.h"
+#import "DataSource.h"
 
 @interface UserInfoController ()
 
@@ -17,11 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    self.navigationItem.title = @"User";
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    //UIEdgeInsets insets = UIEdgeInsetsMake(40, 0, 0, 0);
+    //[self.tableView setContentInset:insets];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,72 +30,113 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Actions -
+
+-(IBAction)touchUpButton:(UIButton*)sender {
+    
+    if (sender.tag == 1) {
+
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+    InfoViewCell *cell = (InfoViewCell*)[self.tableView cellForRowAtIndexPath:indexPath];
+    
+    NSString *firstName = cell.textField.text;
+    
+    
+    indexPath = [NSIndexPath indexPathForRow:1 inSection:0];
+    cell = (InfoViewCell*)[self.tableView cellForRowAtIndexPath:indexPath];
+    
+    NSString *lastName = cell.textField.text;
+    
+    
+    indexPath = [NSIndexPath indexPathForRow:2 inSection:0];
+    cell = (InfoViewCell*)[self.tableView cellForRowAtIndexPath:indexPath];
+    
+    NSString *email = cell.textField.text;
+    
+        
+    if (!self.user) {
+        [[DataSource sharedApplication] addUserWithName:firstName lastName:lastName andEmail:email]; } else
+        {
+            self.user.firstName = firstName;
+            self.user.lastName = lastName;
+            self.user.email = email;
+        }
+
+    }
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    return 4;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    // Configure the cell...
     
-    return cell;
+    static NSString *identifier = @"Identifier";
+    static NSString *buttons = @"OkCancel";
+    
+    if (indexPath.row != 3) {
+        
+        InfoViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
+    
+    if (!cell) {
+        cell = [[InfoViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:identifier];
+    }
+        
+        if (indexPath.row == 0) {
+            
+            cell.textLabel.text = @"Username:";
+            
+            if (self.user) {
+                cell.textField.text = self.user.firstName;
+            }
+            
+        } else if (indexPath.row == 1) {
+            
+            cell.textLabel.text = @"LastName:";
+            if (self.user) {
+                cell.textField.text = self.user.lastName;
+            }
+            
+        } else if (indexPath.row == 2) {
+            
+            cell.textLabel.text = @"Email:";
+            if (self.user) {
+                cell.textField.text = self.user.email;
+            }
+        }
+        
+        return cell;
+        
+    } else if (indexPath.row == 3) {
+        
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:buttons forIndexPath:indexPath];
+        
+        if (!cell) {
+            cell = [[InfoViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:buttons];
+        }
+        
+        return cell;
+    }
+    
+    return nil;
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+
+#pragma mark - UITableViewDelegate -
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

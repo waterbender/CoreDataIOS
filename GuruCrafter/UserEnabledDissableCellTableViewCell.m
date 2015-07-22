@@ -20,4 +20,20 @@
     // Configure the view for the selected state
 }
 
+- (void)setPicture:(UIImage *)picture {
+    
+    _picture = picture;
+    
+    CGPoint point = CGPointMake(self.bounds.size.width, self.bounds.size.height / 2);
+    CGRect rect = CGRectMake(point.x, point.y - 20, 30, 30);
+    
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:picture];
+    
+    imageView.frame = rect;
+    
+    self.imView = imageView;
+    
+    [self addSubview:imageView];
+}
+
 @end

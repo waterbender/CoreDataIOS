@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DataViewController.h"
 
-@interface UsersTableViewController : UITableViewController
+
+@interface UsersTableViewController : DataViewController
 
 @end

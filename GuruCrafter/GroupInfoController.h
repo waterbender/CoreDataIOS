@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DataViewController.h"
+#import "Course.h"
 
-@interface GroupInfoController : UITableViewController
+@interface GroupInfoController : DataViewController
+
+@property (strong, nonatomic) Course *course;
 
 @end

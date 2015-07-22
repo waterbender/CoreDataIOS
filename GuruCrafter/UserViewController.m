@@ -7,8 +7,9 @@
 //
 
 #import "UserViewController.h"
+#import "DataSource.h"
 
-@interface UserViewController ()
+@interface UserViewController () <UITextFieldDelegate>
 
 @end
 
@@ -33,5 +34,18 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+
+
+-(IBAction)touchUpButton:(UIButton*)sender {
+
+    if (sender.tag == 1) {
+            
+        [[DataSource sharedApplication] addUserWithName:self.firstName.text lastName:self.lastName.text andEmail:self.email.text];
+    }
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 
 @end

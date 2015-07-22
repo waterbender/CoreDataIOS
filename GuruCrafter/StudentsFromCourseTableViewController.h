@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DataViewController.h"
+#import "Course.h"
 
-@interface CourseTableViewController : UITableViewController
-
+@interface StudentsFromCourseTableViewController : DataViewController
+@property (strong, nonatomic) Course *course;
 @end

@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Course.h"
+#import "DataViewController.h"
 
-@interface CheckedUsers : UITableViewController
+@interface CheckedUsers : DataViewController
+
+@property (strong, nonatomic) Course *course;
+
+- (instancetype)initWithCourse : (Course*) course;
 
 @end

@@ -12,7 +12,7 @@
 
 @class Teacher, User;
 
-@interface Course : Object
+@interface Course : NSManagedObject
 
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSSet *users;

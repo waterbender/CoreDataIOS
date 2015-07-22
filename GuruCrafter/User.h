@@ -12,7 +12,7 @@
 
 @class Course;
 
-@interface User : Object
+@interface User : NSManagedObject
 
 @property (nonatomic, retain) NSString * email;
 @property (nonatomic, retain) NSString * firstName;

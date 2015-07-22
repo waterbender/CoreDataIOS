@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UsersTableViewController.h"
 
 @interface UserViewController : UIViewController
+
+@property (strong, nonatomic) UsersTableViewController *usController;
+
+-(IBAction)touchUpButton:(UIButton*)sender;
 
 @end
